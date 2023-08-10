@@ -9,5 +9,4 @@ My own Nextflow troubleshooting.
 ## Links
 
  * [nf-core troubleshooting](https://nf-co.re/docs/usage/troubleshooting): general advice
- * [nf-core troubleshooting](https://nf-co.re/docs/usage/troubleshooting): general advice
  * [Video: 'Troubleshooting a failed pipeline' (nf-core/bytesize #35), by Phil Ewels](https://youtu.be/z9n2F4ByIkY)

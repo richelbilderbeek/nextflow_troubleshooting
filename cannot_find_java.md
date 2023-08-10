@@ -1,5 +1,13 @@
 # Cannot find Java or it's a wrong version
 
+This is a line that should always work:
+
+```
+nextflow run nf-core/nanoseq -profile test,singularity --outdir nanoseq_results 
+```
+
+However, directly at the start, one can get this error:
+
 ```
 ERROR: Cannot find Java or it's a wrong version -- please make sure that Java 8 or later (up to 18) is installed
 NOTE: Nextflow is trying to use the Java VM defined by the following environment variables:
