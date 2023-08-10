@@ -3,3 +3,5 @@
 .nextflow/
 nanoseq_results/
 work/
+*.deb
+*.deb.1
