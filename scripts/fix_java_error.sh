@@ -19,6 +19,5 @@
 #   . ./scripts/fix_java_error.sh
 #   source ./scripts/fix_java_error.sh
 
-# export JAVA_HOME=$(readlink -f `which javac` | sed "s:/bin/javac::")
 export JAVA_HOME=$(readlink -f $(which javac) | sed "s:/bin/javac::")
 export JAVA_CMD="${JAVA_HOME}/bin/java"
