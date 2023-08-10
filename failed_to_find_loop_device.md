@@ -10,6 +10,7 @@ and
 
   1. allow the sharing of loop devices
   2. increase the number of loop devices
+  3. 
 
 This can be done by 
 
@@ -20,5 +21,6 @@ This can be done by
 sudo ./scripts/allow_sharing_of_loop_devices.sh
 sudo ./scripts/increase_number_of_loop_devices.sh
 ```
+
 
 
