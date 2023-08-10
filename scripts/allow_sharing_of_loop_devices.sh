@@ -20,7 +20,8 @@ then
   echo "Making copy to ${backup_filename}"
   sudo cp ${filename} ${backup_filename}
 else 
-  echo "Shared loop devices allowed"
+  echo "Shared loop devices allowed. Nothing to do :-)"
+  exit 0
 fi
 
 if [ ! -f $backup_filename ]; then
