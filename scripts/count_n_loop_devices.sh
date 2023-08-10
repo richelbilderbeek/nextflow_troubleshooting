@@ -9,6 +9,6 @@
 #
 
 # Trick from https://github.com/sylabs/singularity/issues/67#issue-909202253
-n_loop_devices=$(ls /dev/loop* | wc --words)
+n_loop_devices=$(find /dev/loop* | wc --words)
 
 echo "n_loop_devices: ${n_loop_devices}"
