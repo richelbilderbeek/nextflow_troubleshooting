@@ -1,4 +1,11 @@
+bytesize
+conf
+config
+Ewels
+GHA
+Nextflow
+nf
+nf
 Richel
 Richèl
-GHA
-
+sbatch
