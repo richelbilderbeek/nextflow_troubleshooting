@@ -8,7 +8,7 @@ The solution (from [here](https://github.com/sylabs/singularity/issues/1499#issu
 is to edit [/etc/singularity/singularity.conf](https://docs.sylabs.io/guides/latest/admin-guide/configfiles.html#singularity-conf) 
 and 
 
-  1. Do not use (Singularity 3.11)[https://github.com/sylabs/singularity/issues/1669#issuecomment-1543598933],
+  1. Do not use (Singularity 3.11.1)[https://github.com/sylabs/singularity/issues/1669#issuecomment-1543598933],
      upgrade to a newer version instead
   2. (maybe not useful) allow the sharing of loop devices
   3. (maybe not useful) increase the number of loop devices
