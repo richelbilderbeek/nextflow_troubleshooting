@@ -20,5 +20,5 @@
 #   source ./scripts/fix_java_error.sh
 
 JAVEC=$(which javac)
-export JAVA_HOME=$(readlink -f ${JAVEC} | sed "s:/bin/javac::")
+export JAVA_HOME=$(readlink -f "${JAVEC}" | sed "s:/bin/javac::")
 export JAVA_CMD="${JAVA_HOME}/bin/java"
