@@ -15,13 +15,19 @@ NOTE: Nextflow is trying to use the Java VM defined by the following environment
  JAVA_HOME: 
 ```
 
-Do:
+  1. Do not use (Singularity 3.11.1)[https://github.com/sylabs/singularity/issues/1669#issuecomment-1543598933],
+     upgrade to a newer version instead
+  2. Export the `JAVA_HOME` and `JAVA_CMD` variables
+
+This can be done by 
+
+  1. run [this script](scripts/update_singularity.sh):
 
 ```
-export JAVA_HOME=$(readlink -f `which javac` | sed "s:/bin/javac::") ; export JAVA_CMD="${JAVA_HOME}/bin/java"
+sudo ./scripts/update_singularity.sh
 ```
 
-Or run [scripts/fix_java_error.sh](scripts/fix_java_error.sh):
+  2. `source` [this script](scripts/fix_java_error.sh):
 
 ```
 . ./fix_java_error.sh

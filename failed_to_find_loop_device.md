@@ -16,10 +16,10 @@ and
 
 This can be done by 
 
-  1. run [this script](scripts/update_singularity_due_to_loop_device.sh):
+  1. run [this script](scripts/update_singularity.sh):
 
 ```
-sudo ./scripts/update_singularity_due_to_loop_device.sh
+sudo ./scripts/update_singularity.sh
 ```
 
 
