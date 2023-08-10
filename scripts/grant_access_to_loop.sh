@@ -15,6 +15,10 @@
 
 # Style of if statement from https://www.shellcheck.net/wiki/SC2143
 # if groups | grep -q "loop"
+
+current_groups=$(groups)
+echo "current_groups: ${current_groups}"
+
 if getent group loop > /dev/null
 then 
   echo "'loop' is already in 'groups'. Nothing left to do :-)"
