@@ -4,6 +4,7 @@ config
 Ewels
 GHA
 Nextflow
+nextflow
 nf
 nf
 Richel
