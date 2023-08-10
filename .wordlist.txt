@@ -10,3 +10,7 @@ nf
 Richel
 Richèl
 sbatch
+github
+https
+issuecomment
+sylabs
