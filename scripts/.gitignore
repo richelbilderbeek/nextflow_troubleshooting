@@ -1,3 +1,5 @@
 .nextflow.log
 .nextflow.log.*
 .nextflow/
+nanoseq_results/
+work/
