@@ -24,13 +24,6 @@ fi
 
 singularity_version=$(singularity --version)
 
-if [ "${verbose}" -eq 1 ]
-then 
-  echo "Newest singularity_version: ${newest_version}"
-  echo "Installed singularity_version: ${singularity_version}"
-fi
-
-
 if echo "${singularity_version}" | grep -iq "${newest_version}"
 then
   if [ "${verbose}" -eq 1 ]
@@ -43,8 +36,8 @@ else
   if [ "${verbose}" -eq 1 ]
   then 
     echo "Older version of Singularity found:"
-    echo "Newest singularity_version: ${newest_version}"
-    echo "Installed singularity_version: ${singularity_version}"
+    echo " * Newest singularity_version: ${newest_version}"
+    echo " * Installed singularity_version: ${singularity_version}"
     echo " "
     echo "Tip: Run:"
     echo " "
