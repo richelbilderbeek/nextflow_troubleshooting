@@ -62,5 +62,7 @@ then
   exit 0
 else
   echo "ERROR: Singularity still in an older version...?"
+  echo " "
+  echo "Note: reported at https://github.com/sylabs/singularity/issues/2094"
   exit 1
 fi
