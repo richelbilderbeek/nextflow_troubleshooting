@@ -35,14 +35,25 @@ then
   exit 0
 fi
 
+deb_filename="singularity-ce_${newest_version}-jammy_amd64.deb"
+url="https://github.com/sylabs/singularity/releases/download/v${newest_version}/${deb_filename}"
 
 if [ "${verbose}" -eq 1 ]
 then
   echo "Updating to newer version of Singularity"
+  echo "deb_filename: ${deb_filename}"
+  echo "URL: ${url}"
 fi
 
-wget --timestamping "https://github.com/sylabs/singularity/releases/download/v${newest_version}/singularity-ce_${newest_version}-jammy_amd64.deb"
-sudo dpkg --install "singularity-ce_${newest_version}-jammy_amd64.deb"
+wget --timestamping "${url}"
+
+if [ ! -f "${deb_filename}" ]
+then
+  echo "ERROR: deb_filename (${deb_filename}) does not exist"
+  exit 42
+fi
+
+sudo dpkg --install "${deb_filename}"
 
 has_newest_singularity=$(bash scripts/has_newest_singularity.sh)
 if [[ ${has_newest_singularity} == "1" ]]
