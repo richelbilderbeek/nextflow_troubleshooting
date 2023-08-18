@@ -22,6 +22,26 @@ then
   echo "Verbose mode"
 fi
 
+expected_path="/usr/bin/singularity"
+current_path=$(which singularity)
+if [ "${current_path}" != "${expected_path}" ]
+then
+  echo "ERROR: the current Singularity path mismatches the expected."
+  echo " * current Singularity path: ${current_path}"
+  echo " * expected Singularity path: ${expected_path}"
+  echo " "
+  echo "Tip: use 'which singularity' to find out the current path"
+  exit 1
+else
+  if [ "${verbose}" -eq 1 ]
+  then
+    echo "Singularity is found at the correct path at ${current_path}"
+  fi
+fi
+
+echo "DEBUG"
+exit 314
+
 singularity_version=$(singularity --version)
 
 if echo "${singularity_version}" | grep -iq "${newest_version}"
