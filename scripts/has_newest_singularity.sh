@@ -30,7 +30,8 @@ then
   echo " * current Singularity path: ${current_path}"
   echo " * expected Singularity path: ${expected_path}"
   echo " "
-  echo "Tip: use 'which singularity' to find out the current path"
+  echo "Tip: use 'which singularity' to find out the current path,"
+  echo "     then delete/rename that file"
   exit 1
 else
   if [ "${verbose}" -eq 1 ]
@@ -38,9 +39,6 @@ else
     echo "Singularity is found at the correct path at ${current_path}"
   fi
 fi
-
-echo "DEBUG"
-exit 314
 
 singularity_version=$(singularity --version)
 
